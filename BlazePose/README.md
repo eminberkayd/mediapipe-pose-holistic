@@ -1,6 +1,7 @@
 ### BlazePose API:
 #### Konfigürasyon Ayarları
 <br>
+
 - STATIC_IMAGE_MODE : `bool` <br>
  Varsayılan değeri: `false`. `false` durumunda gelen girdiyi video akışı olarak değerlendirir. İlk olarak dedektör kısmı çalışır, görüntüde en belirgin olan insanı tespit edip insanın olduğu bölgeye bölütleme uygulayıp arkaplanı silikleştirir. Tespitin ardından izleyici(tracker) kısmı 33 işaretin yerini takip etmeye başlar. Hesaplama yükünü azaltmak ve gecikmeyi en aza indirmek için her frame'de tekrar dedektör kısmını çalıştırmaz. `true` olduğu durumlarda ise gelen girdiye ayrı bir frame gibi davranır, sadece dedektör kısmı çalışıp ilgili 33 nokta bulunur.
 <hr>
